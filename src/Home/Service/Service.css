@@ -1,0 +1,80 @@
+#service {
+  background-color: #272e36;
+  padding-bottom: 50px;
+  padding-top: 30px;
+  color: aliceblue;
+}
+
+.serviceCard {
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+  margin-top: 30px;
+  transition: 0.3s;
+  padding: 20px 20px 30px 10px;
+  border-radius: 5px;
+  border: 2px solid #1c212763;
+}
+.serviceCard:hover {
+  -webkit-box-shadow: 1px 5px 19px 5px rgba(0, 0, 0, 0.26);
+  box-shadow: 1px 5px 19px 5px rgba(0, 0, 0, 0.26);
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+.card-icon > img {
+  height: 50px;
+  color: aliceblue;
+  filter: invert(10);
+}
+.card-icon {
+  margin-right: 30px;
+  border: 2px solid #ce8e20;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 80%;
+  position: relative;
+  margin-top: 30px;
+}
+.card-icon::before {
+  position: absolute;
+  content: "";
+  top: -15%;
+  left: 13%;
+  width: 70%;
+  height: 2%;
+  background-color: #ffa200;
+  transition: 0.3s;
+}
+
+.card-icon::after {
+  position: absolute;
+  content: "";
+  top: 110%;
+  left: 13%;
+  width: 70%;
+  height: 2%;
+  background-color: #ffa200;
+  transition: 0.3s;
+}
+
+.serviceCard:hover .card-icon::after {
+  transform: rotate(89deg);
+  top: 122%;
+  width: 40%;
+  left: 23%;
+}
+.serviceCard:hover .card-icon::before {
+  transform: rotate(89deg);
+  top: -25%;
+  width: 40%;
+  left: 23%;
+}
+
+.card-title {
+  color: #ffa200;
+  font-weight: 700;
+  font-family: sans-serif;
+}

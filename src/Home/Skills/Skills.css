@@ -1,0 +1,51 @@
+
+
+#skills{
+  background-color:#1e262e;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: aliceblue;
+}
+
+
+.CircularProgressbar-path {
+  stroke: #e0a236!important;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.5s ease 0s;
+}
+ 
+
+
+
+.CircularProgressbar .CircularProgressbar-text {
+  fill: #e7d6b5!important;
+  font-size: 20px;
+  dominant-baseline: middle;
+  text-anchor: middle;
+}
+.CircularProgressbar-trail{
+  stroke: rgb(173, 173, 173);
+}
+
+
+.skillName{
+  color: #e7d6b5;
+}
+
+.skillBar{
+  background-color:#161b227a;
+  padding-bottom: 20px;
+  margin-top: 80px;
+}
+.skillBar .CircularProgressbar {
+  width: 50%!important;
+  vertical-align: middle;
+  margin-top: -50px;
+}
+
+
+
+
+
+
+
