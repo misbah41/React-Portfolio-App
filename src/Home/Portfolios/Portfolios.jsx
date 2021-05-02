@@ -49,8 +49,8 @@ const Portfolios = () => {
   return (
     <section id="portfolio" className="portfolioSec">
       <div className="TitleDiv">
-        <h3 className="service-tiltle text-center">
-          CONTACT US FOR ANY HELP AND SERVICES
+        <h3 className="service-tiltle text-center" style={{textTransform:'uppercase'}}>
+        Some of the projects in my deve career
         </h3>
         <div className="styles-div">
           <span className="shadow"></span>

@@ -24,13 +24,14 @@ const Banner = () => {
                 loop={Infinity}
                 wrapper="h3"
               />
-              <button
-                href="https://drive.google.com/file/d/1_iR5Y4KSXmy9M8keDRC_dn3GMM_x4sMy/view"
+              <a
+              style={{display:'block', width:'38%', textAlign:'center'}}
+                href="https://drive.google.com/uc?export=download&id=1_iR5Y4KSXmy9M8keDRC_dn3GMM_x4sMy"
                 download
                 className="resumeBtn"
               >
                 Get Resume
-              </button>
+              </a>
             </div>
           </div>
           <div className="col-sm-6">
