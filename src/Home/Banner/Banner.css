@@ -59,7 +59,12 @@
   margin-top: -78px;
 }
 
-
+@media (min-width: 32px) and (max-width: 767px) {
+  .imgBox-banner{
+    display: none;
+  }
+  
+}
 
 
 

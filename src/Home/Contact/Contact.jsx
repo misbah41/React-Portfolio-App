@@ -63,7 +63,7 @@ const Contact = () => {
     <section id="contact" className="pb-5 pt-5 ">
       <div className="TitleDiv">
         <h3 className="service-tiltle text-center">
-          CONTACT US FOR SERVICES
+          CONTACT ME FOR SERVICES
         </h3>
         <div className="styles-div">
           <span className="shadow"></span>
@@ -77,7 +77,7 @@ const Contact = () => {
       </div>
       <div className="container">
         <div className="row">
-          <div className="col-sm-7">
+          <div className="col-md-7">
             <form onSubmit={handleSubmit(sendEmail)}>
               <div className="row">
                 <div className="col-sm-6">
@@ -120,7 +120,7 @@ const Contact = () => {
               />
             </form>
           </div>
-          <div className="col-sm-5">
+          <div className="col-md-5">
             {socialData.map((data) => (
               <SocialIcon data={data} />
             ))}

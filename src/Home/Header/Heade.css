@@ -16,7 +16,8 @@
   transition: 0.3s;
 }
 .menu-link:hover{
-  color: #e0a236!important;
+  /* color: #e0a236!important; */
+  color: rgb(202, 124, 6)!important;
 }
 .logo{
   color: #e0a236!important;

@@ -49,8 +49,11 @@ const Portfolios = () => {
   return (
     <section id="portfolio" className="portfolioSec">
       <div className="TitleDiv">
-        <h3 className="service-tiltle text-center" style={{textTransform:'uppercase'}}>
-        Some of the projects in my deve career
+        <h3
+          className="service-tiltle text-center"
+          style={{ textTransform: "uppercase", fontSize:"20px" }}
+        >
+          Some of the projects in my dev career
         </h3>
         <div className="styles-div">
           <span className="shadow"></span>
@@ -63,13 +66,9 @@ const Portfolios = () => {
         </p>
       </div>
       <div className="container">
-        <div className="row justify-content-center">
-          <div className="col-sm-12">
-            {projectsData.map((data) => (
-              <PortfolioCard data={data} />
-            ))}
-          </div>
-        </div>
+        {projectsData.map((data) => (
+          <PortfolioCard data={data} />
+        ))}
       </div>
     </section>
   );

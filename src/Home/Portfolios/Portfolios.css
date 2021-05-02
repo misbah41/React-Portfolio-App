@@ -1,5 +1,7 @@
 
-
+body{
+  overflow-x: hidden;
+}
 .portfolioSec{
   background-color: rgb(28, 36, 41);
   color: aliceblue;
@@ -7,19 +9,19 @@
   padding-bottom: 50px;
 }
 
-.projectCardBox{
-  display: flex;
+.projectBg{
   margin-top: 100px;
-  background-color: rgb(44, 53, 58);
-  padding: 10px;
-}
-.projectContent{
-  width: 100%;
+  background-color:rgba(44, 54, 59, 0.479);
+  padding: 20px 0px 20px 10px;
 }
 
+.projectContent{
+  margin-left: 50px;
+}
 .projectImg>img{
   height: 260px;
   margin-right: 50px;
+  width: 100%;
 }
 
 .prjectBtn{

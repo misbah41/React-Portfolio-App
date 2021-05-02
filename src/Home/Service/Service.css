@@ -5,6 +5,7 @@
   color: aliceblue;
 }
 
+
 .serviceCard {
   display: flex;
   justify-content: space-between;
@@ -142,6 +143,11 @@
 
 
 
+@media (min-width: 32px) and (max-width: 767px) {
+  .service-tiltle{
+    font-size: 18px!important;
+  }
+}
 
 
 

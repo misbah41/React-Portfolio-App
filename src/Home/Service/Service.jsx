@@ -43,7 +43,7 @@ const Service = () => {
         </div>
         <div className="row mt-5 justify-content-center">
           {servicesData.map((data) => (
-            <div className="col-sm-6 col-md-6 col-lg-4">
+            <div className=" col-md-6 col-lg-4">
               {" "}
               <ServicesCard data={data} />{" "}
             </div>
