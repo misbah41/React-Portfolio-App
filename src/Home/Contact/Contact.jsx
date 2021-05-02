@@ -56,6 +56,8 @@ const Contact = () => {
         }
       );
   }
+  console.log(success);
+  console.log(error);
 
   return (
     <section id="contact" className="pb-5 pt-5 ">
