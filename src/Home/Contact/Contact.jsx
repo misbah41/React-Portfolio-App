@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.css";
 import { useForm } from "react-hook-form";
 import Phone from "./SocialIcon/phone-call.png";
 import Placeholder from "./SocialIcon/placeholder.png";
 import Email from "./SocialIcon/email.png";
 import SocialIcon from "./SocialIcon/SocialIcon";
-import emailjs from 'emailjs-com';
-
+import emailjs from "emailjs-com";
+import ScrollToTop from "react-scroll-up";
+import UpImg from './up-arrow.png'
 const socialData = [
   {
     socialTitle: "Email Address",
@@ -26,35 +27,43 @@ const socialData = [
 ];
 
 const Contact = () => {
+  const [success, setSuccess] = useState("");
+  const [error, setError] = useState("");
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
 
-
-  // function sendEmail(e) {
-  //   e.preventDefault();
-
-  //   emailjs.sendForm('gmail', 'templates_49172jt', e.target, 'YOUR_USER_ID')
-  //     .then((result) => {
-  //         console.log(result.text);
-  //     }, (error) => {
-  //         console.log(error.text);
-  //     });
-  // }
-
-
-
+  function sendEmail(data, e) {
+    e.preventDefault();
+    console.log(data);
+    emailjs
+      .sendForm(
+        "service_ymewc3h",
+        "template_49172jt",
+        e.target,
+        "user_w6IRVQE73sqoccsUOy0Pf"
+      )
+      .then(
+        (result) => {
+          alert("Thanks form send me your message,");
+          setSuccess(result);
+        },
+        (error) => {
+          alert("OOPS!!! Send Message Failed");
+          setError(error);
+        }
+      );
+  }
 
   return (
-    <section id="contact" className="pb-5 pt-5 mb-5">
+    <section id="contact" className="pb-5 pt-5 ">
       <div className="container">
         <h3 className="text-center">Send Me Message</h3>
         <div className="row">
           <div className="col-sm-7">
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <form onSubmit={handleSubmit(sendEmail)}>
               <div className="row">
                 <div className="col-sm-6">
                   <input
@@ -102,6 +111,9 @@ const Contact = () => {
             ))}
           </div>
         </div>
+        <ScrollToTop showUnder={160}>
+          <img id='topBtn' src={UpImg} alt=""/>
+        </ScrollToTop>
       </div>
     </section>
   );

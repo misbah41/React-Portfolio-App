@@ -1,0 +1,52 @@
+
+
+.portfolioSec{
+  background-color: rgb(28, 36, 41);
+  color: aliceblue;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.projectCardBox{
+  display: flex;
+  margin-top: 100px;
+  background-color: rgb(44, 53, 58);
+  padding: 10px;
+}
+.projectContent{
+  width: 100%;
+}
+
+.projectImg>img{
+  height: 260px;
+  margin-right: 50px;
+}
+
+.prjectBtn{
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+  width: 40%;
+  padding: 7px 14px;
+  border: 1px solid #e0a236;;
+}
+.condition{
+  color: #e0a236;
+  margin-top: 20px;
+  font-weight: 700;
+  padding-left: 10px;
+}
+.techPost{
+  color:#ddc69f;
+  word-spacing: 3px;
+}
+
+
+
+
+
+
+
+
+
+
