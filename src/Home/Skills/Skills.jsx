@@ -34,14 +34,27 @@ const skillsData = [
   {
     percentage: 75,
     skillName: "Firebase",
-  }
+  },
 ];
 
 const Skills = () => {
   return (
     <section id="skills">
       <div className="container">
-        <h3 className='text-center'>My Skills Are Listed Below Here</h3>
+        <div className="TitleDiv">
+          <h3 className="service-tiltle text-center">
+            My Skills Are Listed Below Here
+          </h3>
+          <div className="styles-div">
+            <span className="shadow"></span>
+          </div>
+        </div>
+        <div className="container">
+          <p className="servicesSubTitle">
+            Some of My main services are <br />
+            listed below. I provide different kind of services.
+          </p>
+        </div>
         <div className="row">
           {skillsData.map((skillData) => (
             <SkillBar skillData={skillData} />

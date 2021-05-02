@@ -5,8 +5,6 @@ import Design from "./design.png";
 import Dev from "./dev.png";
 import ServicesCard from "./ServicesCard/ServicesCard";
 
-
-
 const servicesData = [
   {
     serviceTitle: "Web Design",
@@ -29,16 +27,25 @@ const Service = () => {
   return (
     <section id="service">
       <div className="container-fluid pt-5 pb-5">
-        <div className="styles-div">
+        <div className="TitleDiv">
           <h3 className="service-tiltle text-center">
             WHAT I DO PROVIDE SERVICES
           </h3>
+          <div className="styles-div">
+            <span className="shadow"></span>
+          </div>
+        </div>
+        <div className="container">
+          <p className="servicesSubTitle">
+            Some of My main services are <br />
+            listed below. I provide different kind of services.
+          </p>
         </div>
         <div className="row mt-5 justify-content-center">
           {servicesData.map((data) => (
             <div className="col-sm-6 col-md-6 col-lg-4">
               {" "}
-              <ServicesCard data={data}/>{" "}
+              <ServicesCard data={data} />{" "}
             </div>
           ))}
         </div>

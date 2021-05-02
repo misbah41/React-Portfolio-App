@@ -7,7 +7,7 @@ import Email from "./SocialIcon/email.png";
 import SocialIcon from "./SocialIcon/SocialIcon";
 import emailjs from "emailjs-com";
 import ScrollToTop from "react-scroll-up";
-import UpImg from './up-arrow.png'
+import UpImg from "./up-arrow.png";
 const socialData = [
   {
     socialTitle: "Email Address",
@@ -61,8 +61,21 @@ const Contact = () => {
 
   return (
     <section id="contact" className="pb-5 pt-5 ">
+      <div className="TitleDiv">
+        <h3 className="service-tiltle text-center">
+          CONTACT US FOR SERVICES
+        </h3>
+        <div className="styles-div">
+          <span className="shadow"></span>
+        </div>
+      </div>
       <div className="container">
-        <h3 className="text-center">Send Me Message</h3>
+        <p className="servicesSubTitle">
+          Some of My main services are <br />
+          listed below. I provide different kind of services.
+        </p>
+      </div>
+      <div className="container">
         <div className="row">
           <div className="col-sm-7">
             <form onSubmit={handleSubmit(sendEmail)}>
@@ -114,7 +127,7 @@ const Contact = () => {
           </div>
         </div>
         <ScrollToTop showUnder={160}>
-          <img id='topBtn' src={UpImg} alt=""/>
+          <img id="topBtn" src={UpImg} alt="" />
         </ScrollToTop>
       </div>
     </section>
