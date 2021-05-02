@@ -7,7 +7,7 @@ const Banner = () => {
     <section className="banner">
       <div className="container">
         <div className="row">
-          <div className="col-sm-6">
+          <div className="col-md-6">
             <div className="typer-box">
               <h4 className="typedTitle">Hi I'm Misbah Hasan</h4>
               <Typical
@@ -34,7 +34,7 @@ const Banner = () => {
               </a>
             </div>
           </div>
-          <div className="col-sm-6">
+          <div className="col-md-6">
             <div className="imgBox-banner">
               <img src={BannerImg} alt="" />
             </div>

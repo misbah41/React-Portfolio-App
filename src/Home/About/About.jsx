@@ -14,14 +14,14 @@ harum eum, ratione rem illo!`;
 const About = () => {
   return (
     <section id="about">
-      <div className="container">
+      <div className="container pb-5">
         <div className="row">
-          <div className="col-sm-6">
+          <div className="col-md-6">
             <div className="about-imgBox">
               <img src={AboutImg} alt="" />
             </div>
           </div>
-          <div className="col-sm-6">
+          <div className="col-md-6">
             <div className="about-content">
               <h3 className="about-title">All You Need To Know About Me</h3>
               <p className="about-post">{aboutPost}</p>
