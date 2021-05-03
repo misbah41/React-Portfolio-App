@@ -3,7 +3,7 @@ import AboutImg from "../Banner/bannerimg.png";
 import "./About.css";
 
 const aboutPost = ` Hello, I am Misbah Hasan, I have been working as a JavaScript developer for the last 1 year.. 
-i have solid experience in modern technology with react js.. And I have a good idea about the various libraries of React Js like material ui react bootstrap and npm.. 
+i have solid experience in modern technology with react js.. And I have  good idea about the various libraries of React Js like material ui react bootstrap and npm.. 
 I'm always interested in learning new things I like to learn new things and I'm a little more interested in technology `;
 
 const aboutSubPost = `Apart from that I have quite good skills in modern UI design.. 
