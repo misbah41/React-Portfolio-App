@@ -2,14 +2,12 @@ import React from "react";
 import AboutImg from "../Banner/bannerimg.png";
 import "./About.css";
 
-const aboutPost = ` Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut
-asperiores quod ratione? Eius eos obcaecati fugiat placeat rerum
-corrupti animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quae.`;
+const aboutPost = ` Hello, I am Misbah Hasan, I have been working as a JavaScript developer for the last 1 year.. 
+i have solid experience in modern technology with react js.. And I have a good idea about the various libraries of React Js like material ui react bootstrap and npm.. 
+I'm always interested in learning new things I like to learn new things and I'm a little more interested in technology `;
 
-const aboutSubPost = `Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-Perspiciatis maiores quis, ducimus dolor fugiat in minima.
-Voluptatibus ad sed sapiente laborum quos. At consequatur magnam
-harum eum, ratione rem illo!`;
+const aboutSubPost = `Apart from that I have quite good skills in modern UI design.. 
+I love to do clean code, clean design and project organize.. Other than that I like to tidy up and keep everything tidy`;
 
 const About = () => {
   return (

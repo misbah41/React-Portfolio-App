@@ -53,7 +53,7 @@ const Portfolios = () => {
           className="service-tiltle text-center"
           style={{ textTransform: "uppercase", fontSize:"20px" }}
         >
-          Some of the projects in my dev career
+          Recent Working Projects List
         </h3>
         <div className="styles-div">
           <span className="shadow"></span>
