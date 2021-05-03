@@ -13,14 +13,14 @@ const PortfolioCard = ({ data }) => {
           <div className="projectContent">
             <h3>{data.name}</h3>
             <p className="techPost">{data.useTech}</p>
-            <a className="resumeBtn prjectBtn" href={data.projectLink}>
-              Live Preview
+            <a className=" prjectBtn" href={data.projectLink}>
+               Preview
             </a>
-            <a className="resumeBtn prjectBtn" href={data.client}>
+            <a className=" prjectBtn" href={data.client}>
               Client Code
             </a>
             {data.server ? (
-              <a className="resumeBtn prjectBtn" href={data.server}>
+              <a className=" prjectBtn" href={data.server}>
                 Server Code
               </a>
             ) : (

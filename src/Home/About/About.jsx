@@ -25,12 +25,12 @@ const About = () => {
               <p className="about-post">{aboutPost}</p>
               <p className="about-post subPost">{aboutSubPost}</p>
               <a
-                style={{ display: "block", width: "50%", textAlign: "center" }}
+                style={{ display: "block",  textAlign: "center" }}
                 href="https://drive.google.com/uc?export=download&id=1_iR5Y4KSXmy9M8keDRC_dn3GMM_x4sMy"
                 download
                 className="resumeBtn"
               >
-                Download Resume
+                Get Resume
               </a>
             </div>
           </div>

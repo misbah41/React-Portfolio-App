@@ -143,10 +143,15 @@
 
 
 
-@media (min-width: 32px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 448px) {
   .service-tiltle{
     font-size: 18px!important;
   }
+}
+@media (min-width: 320px) and (max-width: 404px) {
+  .card-title {
+    font-size: 20px;
+}
 }
 
 

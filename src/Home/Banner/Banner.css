@@ -1,78 +1,61 @@
-
-
-.banner{
+.banner {
   height: 670px;
   width: 100%;
-  background-color:#2f363d;
+  background-color: #2f363d;
   padding-top: 200px;
   position: relative;
   overflow: hidden;
 }
 
-.banner::before{
+.banner::before {
   position: absolute;
-  content: '';
+  content: "";
   bottom: -12%;
-  left:-10%;
+  left: -10%;
   width: 200%;
   height: 174px;
-  background-color:#ce8e20;
+  background-color: #ce8e20;
   transform: rotate(3deg);
   border-top: 3px solid #1f252b;
 }
 
-
-
-
-
-
-
-
-.typedTitle{
+.typedTitle {
   color: aliceblue;
   margin-bottom: 40px;
   letter-spacing: 2px;
   margin-top: 20px;
 }
-.typer-box>h3{
+.typer-box > h3 {
   color: #e0a236;
   font-weight: 700;
   font-size: 26px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  transition: 0.7s ;
+  transition: 0.7s;
 }
 
-.resumeBtn{
+.resumeBtn {
   border: 2px solid #e0a236;
   outline: none;
   padding: 10px 30px;
-  background:none;
+  background: none;
   margin-top: 30px;
   color: #e0a236;
   font-weight: 500;
   letter-spacing: 2px;
+  display: block;
+  width: 50%;
+  text-align: center;
 }
 
-
-
-.imgBox-banner{
+.imgBox-banner {
   margin-top: -78px;
 }
 
-@media (min-width: 32px) and (max-width: 767px) {
-  .imgBox-banner{
-    display: none;
-  }
-  
-}
-
-
-
-.socialBox{
+.socialBox {
   display: flex;
   margin-top: 30px;
 }
-.social-icon{
+.social-icon {
   color: #ce8e20;
   font-size: 30px;
   margin-right: 50px;
@@ -84,12 +67,12 @@
   position: relative;
   transition: 0.5s;
 }
-.social-icon:hover{
+.social-icon:hover {
   border-right: 2px solid #ce8e20;
   border-left: 2px solid #ce8e20;
 }
 
-.social-icon::before{
+.social-icon::before {
   position: absolute;
   content: "";
   top: 0;
@@ -99,7 +82,7 @@
   background: #ce8e20;
   transition: 0.5s;
 }
-.social-icon::after{
+.social-icon::after {
   position: absolute;
   content: "";
   bottom: 0;
@@ -108,17 +91,49 @@
   height: 2px;
   background: #ce8e20;
   transition: 0.5s;
+}
+.social-icon:hover::after {
+  width: 100%;
+}
+.social-icon:hover::before {
+  width: 100%;
+}
+.social-icon > a {
+  color: #ce8e20;
+}
+.social-icon > a:hover {
+  color: #ce8e20;
+}
 
+@media (min-width: 320px) and (max-width: 767px) {
+  .imgBox-banner {
+    display: none;
+  }
 }
-.social-icon:hover::after{
-  width: 100%;
+@media (min-width: 320px) and (max-width: 448px) {
+  .typer-box > h3 {
+    color: #e0a236;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .about-title {
+    font-size: 20px;
 }
-.social-icon:hover::before{
-  width: 100%;
 }
-.social-icon>a{
-  color: #ce8e20;
-}
-.social-icon>a:hover{
-  color: #ce8e20;
+@media (min-width: 320px) and (max-width: 767px) {
+  .resumeBtn {
+    border: 2px solid #e0a236;
+    outline: none;
+    padding: 10px 30px;
+    background: none;
+    margin: 30px auto;
+    color: #e0a236;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    width: 70%;
+
+  }
 }

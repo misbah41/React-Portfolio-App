@@ -53,7 +53,7 @@ const Banner = () => {
                 </div>
               </div>
               <a
-                style={{ display: "block", width: "38%", textAlign: "center" }}
+                
                 href="https://drive.google.com/uc?export=download&id=1_iR5Y4KSXmy9M8keDRC_dn3GMM_x4sMy"
                 download
                 className="resumeBtn"

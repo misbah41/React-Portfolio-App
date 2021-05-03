@@ -23,7 +23,7 @@ body{
   margin-right: 50px;
   width: 100%;
 }
-
+/* 
 .prjectBtn{
   margin-top: 20px;
   display: block;
@@ -31,7 +31,7 @@ body{
   width: 40%;
   padding: 7px 14px;
   border: 1px solid #e0a236;;
-}
+} */
 .condition{
   color: #e0a236;
   margin-top: 20px;
@@ -51,4 +51,46 @@ body{
 
 
 
+.prjectBtn {
+  border: 1px solid #e0a236;
+  outline: none;
+  padding: 10px 30px;
+  background: none;
+  margin-top: 30px;
+  color: #e0a236;
+  font-weight: 500;
+  letter-spacing: 2px;
+  display: block;
+  width: 50%;
+  text-align: center;
+  font-size: 14px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .prjectBtn {
+    border: 1px solid #e0a236;
+    outline: none;
+    padding: 10px 30px;
+    background: none;
+    margin: 30px auto;
+    color: #e0a236;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    width: 70%;
+
+  }
+  .projectContent{
+    text-align: center;
+    margin-left: 0px;
+  }
+
+  .projectBg{
+    margin-top: 100px;
+    background-color:rgba(44, 54, 59, 0.479);
+    padding: 20px 0px 20px 0px;
+  }
+
+}
 
