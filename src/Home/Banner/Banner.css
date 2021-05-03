@@ -68,5 +68,57 @@
 
 
 
+.socialBox{
+  display: flex;
+  margin-top: 30px;
+}
+.social-icon{
+  color: #ce8e20;
+  font-size: 30px;
+  margin-right: 50px;
+  /* transition-property: border-left, border-right;
+  transition-duration: 0.3s; */
+  border-right: 2px solid #ce8e2000;
+  border-left: 2px solid #ce8e2000;
+  padding: 6px 12px;
+  position: relative;
+  transition: 0.5s;
+}
+.social-icon:hover{
+  border-right: 2px solid #ce8e20;
+  border-left: 2px solid #ce8e20;
+}
 
+.social-icon::before{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #ce8e20;
+  transition: 0.5s;
+}
+.social-icon::after{
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background: #ce8e20;
+  transition: 0.5s;
 
+}
+.social-icon:hover::after{
+  width: 100%;
+}
+.social-icon:hover::before{
+  width: 100%;
+}
+.social-icon>a{
+  color: #ce8e20;
+}
+.social-icon>a:hover{
+  color: #ce8e20;
+}
