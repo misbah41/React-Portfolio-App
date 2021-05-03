@@ -65,13 +65,13 @@
   transform: rotate(89deg);
   top: 122%;
   width: 40%;
-  left: 23%;
+  left: 25%;
 }
 .serviceCard:hover .card-icon::before {
   transform: rotate(89deg);
   top: -25%;
   width: 40%;
-  left: 23%;
+  left: 24%;
 }
 
 .card-title {

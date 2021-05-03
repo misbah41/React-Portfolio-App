@@ -38,13 +38,68 @@ input[placeholder],
   transition: 0.4s;
   padding: 10px;
 }
-.locatImg:hover {
-  background-color: #ce8e20;
-}
 .locatImg > img {
   height: 50px;
   filter: invert(10);
 }
+
+
+.locatImg {
+  color: #ce8e20;
+  font-size: 30px;
+  margin-right: 50px;
+  /* transition-property: border-left, border-right;
+  transition-duration: 0.3s; */
+  border-right: 2px solid #ce8e2000;
+  border-left: 2px solid #ce8e2000;
+  padding: 6px 12px;
+  position: relative;
+  transition: 0.5s;
+}
+.locatImg:hover {
+  border-right: 2px solid #ce8e20;
+  border-left: 2px solid #ce8e20;
+}
+
+.locatImg::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #ce8e20;
+  transition: 0.5s;
+}
+.locatImg::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background: #ce8e20;
+  transition: 0.5s;
+}
+.locatImg:hover::after {
+  width: 100%;
+}
+.locatImg:hover::before {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #topBtn {
   background-color: #ce8e20;
